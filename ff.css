@@ -3,6 +3,7 @@ h1{
     text-align: center;
 }
 
+
 #div1{
 	margin-right: : auto;
 	margin-left: auto;
@@ -22,15 +23,24 @@ h1{
 
 
 #button{
- width: 95px;
+ width: 1000px;
  color: red;
   text-align: center;
 }
 
 
-#ul{
+
+ul{
+	list-style-type: none;
 	 text-align: center;
+	  padding: 50px;
+	  font-style: oblique;
+	  font-size: 30px;
+    
 }
+
+
+
 
 
 h2{
@@ -45,9 +55,36 @@ p{
 }
 
 
+#theName{
+	width: 10000000000px;
+	padding: 10px;
+margin-right: : auto;
+	margin-left: auto;
+	color: black;
+
+}
+
+
+#input{
+		width: 200px;
+		height: 40px;
+	padding: 10px;
+		 text-align: center;
+
+ 
+}
+
+#input11{
+	text-align: center;
+	height: auto;
+
+}
+
+
 button{
 	width:100px;
 	 text-align: center;
+
 
 }
 
@@ -55,10 +92,20 @@ button{
  body{
 	margin-right: : auto;
 	margin-left: auto;
-	background-image: url('see-clipart-summer-wallpaper-19.jpg');
+	background-image: url('https://data.whicdn.com/images/157002781/large.jpg');
 	background-position: center;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
 }
+
+
+
+
+
+
+
+
+
+
 
 

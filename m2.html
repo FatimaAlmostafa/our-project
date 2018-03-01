@@ -1,31 +1,198 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <title>Delicious Recipes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 <body>
 
-<h2 class="w3-center">THE BEST</h2>
+
+
+<h2 class="w3-center" style="font-family:  lobster , cursive ;font-size: 35px; color:#C70039">THE RECIPES </h2>
+<p id = "kk" style="font-family: cursive , 100px; "> let us know recipces to use it : </p>
 
 <div class="w3-content w3-display-container">
 
+    <img class="mySlides" src="http://i-exc.ccm2.net/iex/1280/1020272911/1172928.jpg" style="width:100%">
+
+    <img class="mySlides" src="http://i-exc.ccm2.net/iex/1280/1522164664/1172914.jpg" style="width:100%">
+
   <img class="mySlides" src="http://i-exc.ccm2.net/iex/1280/1956698631/1172917.jpg" style="width:100%">
 
-  <img class="mySlides" src="http://i-exc.ccm2.net/iex/1280/1522164664/1172914.jpg" style="width:100%">
+  
 
-  <img class="mySlides" src="http://i-exc.ccm2.net/iex/1280/1912532845/1172923.jpg" style="width:100%">
+  
 
-  <img class="mySlides" src="http://i-exc.ccm2.net/iex/1280/1020272911/1172928.jpg" style="width:100%">
 
-<img class="mySlides" src="http://i-exc.ccm2.net/iex/1280/1158553695/1172908.jpg" style="width:100%">
+
+
 
 
 
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
 </div>
+ 
+<div style="font-family:  lobster , cursive ";
+    id="flip1"> 1- Pound Cake <br/> Click to show recipe</div>
+<div id="panel1">Ingredients 8 people
+3 cup flour
+1/4 spoon baking soda
+3 teaspoons Baking powder
+90 gm jelly powder strawberry
+A cup and a half sugar
+A cup of butter
+6 eggs
+Vanilla
+Teaspoon lemon juice
+A sour creamy cup
+For decoration: freshly chopped strawberries
+Chocolate sauce
+
+How to prepare
+Powder and put aside.
+
+Beat the butter, add the sugar and mix until it becomes crisp. The eggs are pressed with one vanilla.
+
+Reduce the speed of the electric racket and add the flour mixture on 3 times alternately with sour cream.
+
+Words in the sense: Add the strawberry cubes to the mixture and stir well.
+
+Pour the mixture into a greased, butter-covered tray.
+
+The bakery is baked in a medium temperature oven and preheated for 30-45 minutes.
+
+Touch the cake from the oven and cool completely and then decorate with chocolate sauce and cut the strawberries.
+
+
+Cut the cake and serve.</div>
+
+
+
+<div style="font-family:  lobster , cursive ";
+    id="flip2"> 2- How ice cream ice cream is made in strawberries in five minutes<br/> Click to show recipe</div>
+<div id="panel2">
+
+
+Type of dish confectionary
+Difficulty is easy
+Preparation 2 minutes
+Preparation time 5 minutes
+Total time is 7 minutes
+Number of people 4
+Evaluation
+A quick and nutritious recipe for your children in the summer and enjoy a wonderful flavor ...
+Ingredients 4 people
+4 cups frozen strawberries.
+3 tablespoons white honey.
+1/2 cup whole or skimmed milk as desired.
+1 tbsp lemon juice.
+How to prepare
+
+Beat the strawberries with honey, rup and lemon juice and fail to use the minutes of food for five minutes or even get a creamy feel.
+
+
+Ice cream ice cream is served directly or stored in a freezer sealed with a freezer for up to a month.</div>
+
+
+
+
+
+
+<div style="font-family:  lobster , cursive ";
+    id="flip3"> 3- Method of Chizicack Strawberry and Orio <br/> Click to show recipe</divx>
+<div id="panel3">
+
+ 
+Type of dish confectionary
+Difficulty is easy
+Method of preparation 30 minutes
+Preparation time is 70 minutes
+The total time is 100 minutes
+Number of persons 8
+Ingredients of 
+
+
+
+vanilla
+1/4 cup sour cream
+Strawberry Glaze:
+1 cup frozen strawberry
+2 cups fresh strawberries
+3 tbsp water
+2 tablespoons sugar
+Teaspoon starch
+How to prepare
+Sprinkle the orio beans and mix them with sugar and butter and then mix the mixture in a suitable tray with pressure.
+
+In a suitable bowl, skim the cheese with sugar, flour and salt until the mixture is creamy, then add the eggs, vanilla and yolk one after the other with a good whisk. Add the sour cream and blanch again.
+
+Mix the mixture on the pre-prepared oreo base and place the Chinese in a hot water bath and bake in a medium heat oven for 70-80 minutes.
+
+Bake the cake completely and then remove it from the Chinese and spread the strawberry beads on the face.
+
+Strawberry strawberries: Squeeze the strawberries well using food preparation and then drain and place in a suitable bowl and add sugar.
+
+Add the starch in the amount of water. Add the strawberries and place the bowl on low heat, stirring until the mixture thickens.
+
+make coolder sauce and used to decorate the cake as desired.</div>
+
+
+
+
+
+
 
 <script>
+
+$(document).ready(function(){
+  $('#panel1').slideUp();
+  $('#panel2').slideUp();
+  $('#panel3').slideUp();
+    $("#flip1").on('click',function(){
+        $("#panel1").slideToggle("slow");
+   
+   
+    
+});
+
+$("#flip2").on('click',function(){
+        $("#panel2").slideToggle("slow");
+   
+   
+    
+});
+$("#flip3").on('click',function(){
+        $("#panel3").slideToggle("slow");
+   
+   
+    
+});
+
+
+$("#btn2 ").on("click",function() {
+  plusDivs(1);
+  $("#panel").text("ddds")
+})
+
+$("#btn1").on("click",function() {
+  plusDivs(-1);
+  $("#panel").text("How ice cream ice cream is made in strawberries in five minutes")
+})
+
+
+});
+
+
+
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -46,5 +213,61 @@ function showDivs(n) {
 
 </script>
 
+
+
+
+
+
+
+<style> 
+
+body{
+  background-color: #F9E79F
+}
+
+
+
+
+#panel1, #flip1 {
+
+    padding: 5px;
+    text-align: center;
+    background-color: pink;
+    border: solid 1px #c3c3c3;
+}
+
+#panel1 {
+    padding: 50px;
+    display: none;
+  }
+
+#panel2, #flip2 {
+
+    padding: 5px;
+    text-align: center;
+    background-color:#7DCEA0  ;
+    border: solid 1px #c3c3c3;
+}
+
+#panel2 {
+    padding: 50px;
+    display: none;
+  }
+  #panel3, #flip3 {
+
+    padding: 5px;
+    text-align: center;
+    background-color: pink;
+    border: solid 1px #c3c3c3;
+}
+
+#panel3 {
+    padding: 50px;
+    display: none;
+  }
+
+
+
+</style>
 </body>
 </html>
